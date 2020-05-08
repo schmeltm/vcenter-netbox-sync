@@ -14,6 +14,8 @@ from pyVmomi import vim
 import settings
 from logger import log
 from templates.netbox import Templates
+import urllib3
+urllib3.disable_warnings()
 
 
 def compare_dicts(dict1, dict2, dict1_name="d1", dict2_name="d2", path=""):
